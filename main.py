@@ -56,7 +56,7 @@ while True:
     if "exit" in in_str:
         break
     in_list = in_str.split(" ")
-    is_correct = len(in_list) == 2 and all([list(map(lambda s: (s.isdigit and 0 <= int(s) < 3), in_list))])
+    is_correct = len(in_list) == 2 and all(list(map(lambda s: (s.isdigit() and 0 <= int(s) < 3), in_list)))
     if not is_correct:
         incorrect_input()
         continue
